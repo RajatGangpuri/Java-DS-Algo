@@ -1,7 +1,5 @@
+import java.util.*;
 public class abc {
-    
-}
-public class CheckReversedSubarraySort {
 
     public static boolean isSubarraySortedAfterReverse(int[] arr, int start, int end) {
         int[] sortedArr = arr.clone(); // Make a copy of the original array
