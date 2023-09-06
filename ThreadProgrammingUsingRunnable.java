@@ -1,7 +1,7 @@
 //Thread Programming using Runnable Interface
 
 
-public class AB implements Runnable{
+public class ThreadProgrammingUsingRunnable implements Runnable{
     @Override
     public void run(){
 

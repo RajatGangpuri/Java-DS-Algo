@@ -6,6 +6,55 @@
     "configurations": [
         {
             "type": "java",
+            "name": "Eceptionhandling",
+            "request": "launch",
+            "mainClass": "Eceptionhandling",
+            "projectName": "javacodes_6e709ceb"
+        },
+        {
+            "type": "java",
+            "name": "ExceptionArithmaticAndIllegal",
+            "request": "launch",
+            "mainClass": "ExceptionArithmaticAndIllegal",
+            "projectName": "javacodes_6e709ceb"
+        },
+        {
+            "type": "java",
+            "name": "NestedExceptionHandling",
+            "request": "launch",
+            "mainClass": "NestedExceptionHandling",
+            "projectName": "javacodes_6e709ceb"
+        },
+        {
+            "type": "java",
+            "name": "ExceptionHandling",
+            "request": "launch",
+            "mainClass": "ExceptionHandling",
+            "projectName": "javacodes_6e709ceb"
+        },
+        {
+            "type": "java",
+            "name": "ThreadProgrammingUsingRunnable",
+            "request": "launch",
+            "mainClass": "ThreadProgrammingUsingRunnable",
+            "projectName": "javacodes_6e709ceb"
+        },
+        {
+            "type": "java",
+            "name": "ArrayThreeSum",
+            "request": "launch",
+            "mainClass": "ArrayThreeSum",
+            "projectName": "javacodes_6e709ceb"
+        },
+        {
+            "type": "java",
+            "name": "ThreadProgramming",
+            "request": "launch",
+            "mainClass": "ThreadProgramming",
+            "projectName": "javacodes_6e709ceb"
+        },
+        {
+            "type": "java",
             "name": "ArrayNextPermutation",
             "request": "launch",
             "mainClass": "ArrayNextPermutation",
