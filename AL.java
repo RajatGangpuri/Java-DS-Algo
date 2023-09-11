@@ -1,5 +1,4 @@
 //Remove Consecutive Characters
-import java.util.*;
 public class AL{
 
     public static String find(String str){

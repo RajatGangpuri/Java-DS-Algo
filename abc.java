@@ -1,38 +1,47 @@
-import java.util.*;
-public class abc {
+public class ABC{
+    public static int currentThread=1;
 
-    public static boolean isSubarraySortedAfterReverse(int[] arr, int start, int end) {
-        int[] sortedArr = arr.clone(); // Make a copy of the original array
-        Arrays.sort(sortedArr, start, end + 1); // Sort the subarray
-        
-        // Reverse the subarray in the original array
-        while (start < end) {
-            int temp = arr[start];
-            arr[start] = arr[end];
-            arr[end] = temp;
-            start++;
-            end--;
+
+    public static class MyRunnable implements Runnable{
+        public int order;
+        public int threadId;
+
+        public MyRunnable(int order, int threadId){
+            this.threadId=threadId;
+            this.order=order;
         }
-        
-        // Compare the reversed subarray with the sorted subarray
-        for (int i = 0; i < arr.length; i++) {
-            if (arr[i] != sortedArr[i]) {
-                return false;
+
+        @Override
+        public void run(){
+            int i=1;
+            while(i<5){
+                synchronized(ABC.class){
+                    while(order!=currentThread){
+                        try {
+                            ABC.class.wait();
+                        } catch (Exception e) {
+                            // TODO: handle exception
+                        }
+                    }
+                    System.out.println("Thread"+threadId);
+                    currentThread=(currentThread%3)+1;
+                    i++;
+                    ABC.class.notifyAll();
+                }
             }
         }
-        return true;
     }
 
+
+
     public static void main(String[] args) {
-        int[] array = {3, 7, 5, 9, 10}; // Modify this array as needed
-        int start = 1; // Modify the start index of the subarray
-        int end = 3; // Modify the end index of the subarray
+
+        Thread thread1=new Thread(new MyRunnable(1,1));
+        Thread thread2=new Thread(new MyRunnable(2,2));
+        Thread thread3=new Thread(new MyRunnable(3,3));
+        thread1.start();
+        thread2.start();
+        thread3.start();
         
-        boolean isSortedAfterReverse = isSubarraySortedAfterReverse(array, start, end);
-        if (isSortedAfterReverse) {
-            System.out.println("Reversing the subarray makes the array sorted.");
-        } else {
-            System.out.println("Reversing the subarray does not make the array sorted.");
-        }
     }
 }

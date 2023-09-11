@@ -1,7 +1,6 @@
 
 //Find minimum number of merge operations to make an array palindrome
 
-import java.util.*;
 public class ArrayMinimumPalindrome {
     public static int find(int N, int arr[]){
         int i=0;

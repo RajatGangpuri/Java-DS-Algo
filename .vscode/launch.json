@@ -6,6 +6,41 @@
     "configurations": [
         {
             "type": "java",
+            "name": "ABC",
+            "request": "launch",
+            "mainClass": "ABC",
+            "projectName": "javacodes_6e709ceb"
+        },
+        {
+            "type": "java",
+            "name": "AB",
+            "request": "launch",
+            "mainClass": "AB",
+            "projectName": "javacodes_6e709ceb"
+        },
+        {
+            "type": "java",
+            "name": "ThreadProgrammingThreethreadRunnable",
+            "request": "launch",
+            "mainClass": "ThreadProgrammingThreethreadRunnable",
+            "projectName": "javacodes_6e709ceb"
+        },
+        {
+            "type": "java",
+            "name": "ThreadProgrammingThreeThread",
+            "request": "launch",
+            "mainClass": "ThreadProgrammingThreeThread",
+            "projectName": "javacodes_6e709ceb"
+        },
+        {
+            "type": "java",
+            "name": "ThreadProgrammingProducerConsumerProblem",
+            "request": "launch",
+            "mainClass": "ThreadProgrammingProducerConsumerProblem",
+            "projectName": "javacodes_6e709ceb"
+        },
+        {
+            "type": "java",
             "name": "Eceptionhandling",
             "request": "launch",
             "mainClass": "Eceptionhandling",

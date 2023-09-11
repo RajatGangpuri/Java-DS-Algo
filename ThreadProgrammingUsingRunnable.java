@@ -4,10 +4,9 @@
 public class ThreadProgrammingUsingRunnable implements Runnable{
     @Override
     public void run(){
-
         int i=0;
         while(i<10){
-            System.out.println(Thread.currentThread().getName() +"Example1");
+            System.out.println(Thread.currentThread().getName());
             i++;
         }
     }

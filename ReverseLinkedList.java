@@ -49,7 +49,7 @@ class ReverseLinkedList {
         addFirst(4);
         addFirst(5);
         printInfo();
-        ABC myobj=new ABC();
+        ReverseLinkedList myobj=new ReverseLinkedList();
         myobj.reverseList();
         System.out.println();
         printInfo();
